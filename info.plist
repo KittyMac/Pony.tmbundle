@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>ebppb@puvzrenfj.pbz</string>
+	<key>contactName</key>
+	<string>Rocco Bowling</string>
+	<key>description</key>
+	<string>Support for the &lt;a href="https://www.ponylang.io"&gt;Pony&lt;/a&gt; langauge. Pony is an open-source, object-oriented, actor-model, capabilities-secure, high-performance programming language.</string>
+	<key>name</key>
+	<string>Pony</string>
+	<key>uuid</key>
+	<string>EE902FE7-505D-4786-9E65-AA186209A4A0</string>
+</dict>
+</plist>
