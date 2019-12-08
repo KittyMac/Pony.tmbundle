@@ -46,6 +46,45 @@
 		<dict>
 			<key>begin</key>
 			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.c</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.c</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.pony</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\(\\|[abefnprtv'"?]|[0-3]\d{0,2}|[4-7]\d?|x[a-fA-F0-9]{0,2}|u[a-fA-F0-9]{0,4}|U[a-fA-F0-9]{0,8})</string>
+					<key>name</key>
+					<string>constant.character.escape.c</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>invalid.illegal.unknown-escape.c</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
@@ -62,19 +101,19 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>/\*</string>
-			<key>end</key>
-			<string>\*/</string>
-			<key>name</key>
-			<string>comment.block.pony</string>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>//</string>
 			<key>end</key>
 			<string>\n</string>
 			<key>name</key>
 			<string>comment.line.double-slash.pony</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -96,39 +135,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(new|be|fun)\s+(iso|trn|ref|val|box|tag)?\b\s*([_a-z][_a-zA-Z0-9]*)</string>
+			<string>\b(new|be|fun)\b</string>
 			<key>name</key>
 			<string>keyword.other.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(new|be|fun)\s+(iso|trn|ref|val|box|tag)?\b\s*([_a-z][_a-zA-Z0-9]*)</string>
-			<key>name</key>
-			<string>keyword.other.capability.pony</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(new|be|fun)\s+(iso|trn|ref|val|box|tag)?\b\s*([_a-z][_a-zA-Z0-9]*)</string>
-			<key>name</key>
-			<string>entity.name.function.pony</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(type|interface|trait|primitive|struct|class|actor)\s+(iso|trn|ref|val|box|tag)?@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
+			<string>\b(type|interface|trait|primitive|struct|class|actor)\b</string>
 			<key>name</key>
 			<string>keyword.other.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(type|interface|trait|primitive|struct|class|actor)\s+(iso|trn|ref|val|box|tag)?@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
+			<string>\b(iso|trn|ref|val|box|tag)\b</string>
 			<key>name</key>
-			<string>keyword.other.capability.pony</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(type|interface|trait|primitive|struct|class|actor)\s+(iso|trn|ref|val|box|tag)?@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
-			<key>name</key>
-			<string>entity.name.type.pony</string>
+			<string>keyword.other.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -200,37 +221,37 @@
 			<key>match</key>
 			<string>(\?|[-=]&gt;)</string>
 			<key>name</key>
-			<string></string>
+			<string>entity.other.attribute-name.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(\-|\+|\*|/(?![/*])|%|&lt;&lt;|&gt;&gt;)</string>
 			<key>name</key>
-			<string></string>
+			<string>entity.other.attribute-name.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(==|!=|&lt;=|&gt;=|&lt;|&gt;)</string>
 			<key>name</key>
-			<string></string>
+			<string>entity.other.attribute-name.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(is|isnt|not|and|or|xor)\b</string>
 			<key>name</key>
-			<string></string>
+			<string>entity.other.attribute-name.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>=</string>
 			<key>name</key>
-			<string></string>
+			<string>entity.other.attribute-name.pony</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(\||\&amp;|\,|\^)</string>
 			<key>name</key>
-			<string></string>
+			<string>entity.other.attribute-name.pony</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
