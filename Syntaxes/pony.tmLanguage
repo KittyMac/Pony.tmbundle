@@ -4,7 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>src</string>
+		<string>pony</string>
 	</array>
 	<key>name</key>
 	<string>Pony</string>
@@ -264,7 +264,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.untitled</string>
+	<string>source.pony</string>
 	<key>uuid</key>
 	<string>4B5BB96E-8565-433A-8CE2-CB982755F917</string>
 </dict>
