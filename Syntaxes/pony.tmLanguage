@@ -77,6 +77,54 @@
 			<string>comment.line.double-slash.pony</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.pony</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.pony</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.pony</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(type|interface|trait|primitive|struct|class|actor)\s+(iso|trn|ref|val|box|tag)?\s*\b(_*[A-Z][_a-zA-Z0-9]*)\b</string>
+			<key>name</key>
+			<string>meta.symbol.pony</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.capability.pony</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.capability.pony</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.pony</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(be|fun|new)\s+(iso|trn|ref|val|box|tag)?\s*\b(_*[A-Z_a-zA-Z0-9]*)</string>
+			<key>name</key>
+			<string>meta.symbol.pony</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(actor|addressof|and|as|be|break|class|compile_error|compile_intrinsic)\b</string>
 			<key>name</key>
