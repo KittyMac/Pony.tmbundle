@@ -69,6 +69,20 @@
 			<string>comment.block.pony</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.symbol.pony</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\/\/\s*MARK:(.*)$</string>
+			<key>name</key>
+			<string>comment.line.double-slash.pony</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>//</string>
 			<key>end</key>
