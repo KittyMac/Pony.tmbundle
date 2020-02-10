@@ -140,7 +140,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(actor|addressof|and|as|be|break|class|compile_error|compile_intrinsic)\b</string>
+			<string>\b(actor|addressof|addressof_usize|__error_loc|__error_code|and|as|be|break|class|compile_error|compile_intrinsic)\b</string>
 			<key>name</key>
 			<string>keyword.other.capability.pony</string>
 		</dict>
